@@ -22,7 +22,7 @@ public class Absolutexpath {
 		Thread.sleep(4000);
 		System.out.println(Appicon);
 		System.out.println(Appicon.getText());
-		driver.quit();
+		driver.close();
 
 	}
 
