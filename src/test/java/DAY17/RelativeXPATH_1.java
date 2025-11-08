@@ -34,6 +34,15 @@ public class RelativeXPATH_1 {
 		boolean text1 = driver.findElement(By.xpath("//div/div/h1[text()='Amazon Best Sellers']")).isDisplayed();
 		Thread.sleep(2000);
 		System.out.println(text1);
+		
+		//relative xpath starts-with
+		driver.findElement(By.xpath("//a[starts-with(text(),'Gar')]")).click();
+		Thread.sleep(1000);
+		
+		//relative xpath Contains
+		boolean text2 = driver.findElement(By.xpath("//span[contains(text(),'Amazon Best Sellers')]")).isDisplayed();
+		System.out.println(text2);
+		
 		driver.close();
 
 
