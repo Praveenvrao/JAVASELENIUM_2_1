@@ -21,8 +21,12 @@ public class Xpath_Axes {
 		Thread.sleep(2000);
 		//following
 		driver.findElement(By.xpath("//a[@href ='/gp/bestsellers/electronics/ref=zg_bs_nav_electronics_0']/following::li/a[text()='Garden']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		//child
+		driver.findElement(By.xpath("//ul[@class ='nav-ul']/child::li[1]")).click();
+		Thread.sleep(2000);
 		driver.close();
+		
 	}
 
 }
