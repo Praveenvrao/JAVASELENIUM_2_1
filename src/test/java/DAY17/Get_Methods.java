@@ -27,7 +27,11 @@ public class Get_Methods {
 		Set<String> WHS = driver.getWindowHandles();
 		System.out.println("Window handles are -> "+ WHS);
 		
-		
+		//Browser methods
+				Thread.sleep(3000);
+				driver.close();
+				Thread.sleep(3000);
+				driver.quit();
 		
 
 	}
