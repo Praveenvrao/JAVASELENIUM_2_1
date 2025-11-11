@@ -33,7 +33,7 @@ public class Xpath_Axes {
 		Thread.sleep(5000);
 		List<WebElement> Text = driver.findElements(By.xpath("//span[normalize-space()='Prime member exclusive']"));
 		System.out.println(Text);
-		driver.getTitle();
+		System.out.println(driver.getTitle());
 		driver.close();
 		
 	}
