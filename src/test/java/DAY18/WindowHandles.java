@@ -29,9 +29,23 @@ public class WindowHandles {
 		System.out.println(WINHD.get(0));
 		
 		driver.switchTo().window(WINHD.get(1));
-		driver.findElement(By.xpath("//*[text()='Contact Sales']")).click();
+		//driver.findElement(By.xpath("//*[text()='Contact Sales']")).click();
 		Thread.sleep(3000);
 		System.out.println(driver.getTitle());
+		
+		//for each loop
+		
+		Set<String> winhandles2 = driver.getWindowHandles();
+		System.out.println(winhandles2);
+		for(String objectWINHD2:winhandles2) {
+			String PTitle =driver.switchTo().window(objectWINHD2).getTitle();
+			if(PTitle.equals("Human Resources Management Software | HRMS | OrangeHRM")) {
+				System.out.println(PTitle);
+				driver.findElement(By.xpath("//*[text()='Contact Sales']")).click();
+				System.out.println(driver.getCurrentUrl());
+			}
+		}
+		
 		driver.quit();
 
 	}
