@@ -24,6 +24,15 @@ public class Navigation_Methods {
 		System.out.println(driver.getTitle());
 		driver.navigate().forward();
 		System.out.println(driver.getTitle());
+		driver.navigate().back();
+		
+		driver.navigate().refresh();
+		driver.findElement(By.xpath("//*[text()='OrangeHRM, Inc']")).click();
+		
+		System.out.println(driver.getTitle());
+		driver.close();
+		driver.quit();
+		
 		
 		
 
