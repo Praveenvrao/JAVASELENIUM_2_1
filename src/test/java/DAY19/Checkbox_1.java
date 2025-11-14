@@ -1,6 +1,7 @@
 package DAY19;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,8 +34,30 @@ public class Checkbox_1 {
 		}else {
 			System.out.println("Single checkbox Testcase is failed");
 		}
-		driver.quit();		
 
+		//Selecting multiple checkboxes
+		driver.findElement(By.xpath("//a[normalize-space()='Checkboxes']")).click();
+		List<WebElement> Boxes = driver.findElements(By.xpath("//*[@class='form-check form-check-inline']"));
+		
+		//using for each loop
+		for(WebElement B1 : Boxes) {
+			boolean TRUEC = Boxes.isEmpty();
+			if (TRUEC = true) {
+				B1.click();
+				System.out.println(B1.getText() + " Box is Selected");
+			}
+		}
+		
+		driver.findElement(By.xpath("//input[@id='submit-id-submit']")).click();
+		String Actresults2 = driver.findElement(By.xpath("//p[text()='one, two, three']")).getText();
+		
+		if(Actresults2.equals("one, two, three")) {
+			System.out.println("Multiple checkboxes selected and testcase is PASSED and the selected boxes are -> '" +Actresults2+ "'");
+		}else {
+			System.out.println("Testcase is Failed");
+		}
+		driver.quit();
+		
 	}
 
 }
