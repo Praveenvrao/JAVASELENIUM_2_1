@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.w3c.dom.Text;
 
 public class Alerts_1 {
 
@@ -38,8 +39,15 @@ public class Alerts_1 {
 		//Prompt alert
 		driver.findElement(By.xpath("//*[normalize-space()='Prompt Alert']")).click();
 		Thread.sleep(5000);
+		Alert PAlert = driver.switchTo().alert();
+		System.out.println("The Text in the Alert is "+PAlert.getText());
+	
+		PAlert.sendKeys("MICHEAL JORDAN");
+		PAlert.accept();
 		
-		
+		String AlertText = driver.findElement(By.xpath("//p[@id='demo']")).getText();
+		System.out.println(AlertText);
+		driver.quit();
 		
 
 	}
