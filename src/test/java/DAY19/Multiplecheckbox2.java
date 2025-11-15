@@ -41,6 +41,7 @@ public class Multiplecheckbox2 {
 				Days.get(j).click();
 			}
 		}
+		driver.quit();
 
 	}
 
