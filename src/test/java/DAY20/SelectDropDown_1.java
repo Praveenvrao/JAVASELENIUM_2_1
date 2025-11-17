@@ -26,6 +26,7 @@ public class SelectDropDown_1 {
 		
 //		Select by using index
 		Sdropdown.selectByIndex(1);
+		
 		System.out.println(Sdropdown.getOptions());		
 		List<WebElement> OP1 = Sdropdown.getOptions();
 		
@@ -37,7 +38,25 @@ public class SelectDropDown_1 {
 				dropdownEle.click();
 			}
 		}
-		//driver.quit();
+		
+//		Select other dropdown by using Value
+		WebElement DD2 = driver.findElement(By.xpath("//select[@id='elementsPerPageSelect']"));
+		Select SelectDD2 = new Select(DD2);
+		SelectDD2.selectByValue("50");
+		
+//		Select another dropdown with Visible text
+		WebElement DD3 = driver.findElement(By.xpath("//select[@id='country']"));
+		Select SelectDD3 = new Select(DD3);
+		SelectDD3.selectByVisibleText("Christmas Island");
+		
+		List<WebElement> DD3values = SelectDD3.getOptions();
+		System.out.println(DD3values.size());
+//		System.out.println(DD3values);
+		
+		for (int i=0;i< DD3values.size();i++) {
+			System.out.println(i +" Number country name is -> "+ DD3values.get(i).getText());
+		}
+		driver.quit();
 		
 
 	}
