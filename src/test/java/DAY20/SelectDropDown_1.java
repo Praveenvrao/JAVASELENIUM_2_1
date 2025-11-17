@@ -1,5 +1,6 @@
 package DAY20;
 
+import java.lang.classfile.ClassFile.Option;
 import java.time.Duration;
 import java.util.List;
 
@@ -22,7 +23,21 @@ public class SelectDropDown_1 {
 //		Select dropdown
 		WebElement dropdownEle = driver.findElement(By.xpath("//select[@id='dropdown']"));
 		Select Sdropdown = new Select(dropdownEle);
-		System.out.println(Sdropdown.getOptions());
+		
+//		Select by using index
+		Sdropdown.selectByIndex(1);
+		System.out.println(Sdropdown.getOptions());		
+		List<WebElement> OP1 = Sdropdown.getOptions();
+		
+//		for each loop - printing values
+		for(WebElement options1:OP1 ) {
+			String Text1 = options1.getText();
+			System.out.println(Text1);
+			if(Text1.equals("Option 1")) {
+				dropdownEle.click();
+			}
+		}
+		//driver.quit();
 		
 
 	}
