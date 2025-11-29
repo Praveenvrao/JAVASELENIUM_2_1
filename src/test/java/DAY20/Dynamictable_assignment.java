@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v140.page.Page;
 import org.openqa.selenium.support.ui.Select;
 
 public class Dynamictable_assignment {
@@ -26,6 +27,13 @@ public class Dynamictable_assignment {
 		System.out.println(desSelect.getOptions());
 		desSelect.selectByVisibleText("New York");
 		driver.findElement(By.xpath("//input[@value ='Find Flights']")).click();
+		
+		String ActTitle = driver.getTitle();
+		if (ActTitle.equals("BlazeDemo - reserve")) {
+			String Pagetablename = driver.findElement(By.xpath("//*[@class='container']//h3")).getText();
+			System.out.println("Entered the " + Pagetablename + " PAGE");
+			
+		}
 		
 
 	}
