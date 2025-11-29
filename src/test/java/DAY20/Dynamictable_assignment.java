@@ -1,6 +1,10 @@
 package DAY20;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.v140.page.Page;
 import org.openqa.selenium.support.ui.Select;
+
+import net.bytebuddy.asm.Advice.OffsetMapping.Sort;
 
 public class Dynamictable_assignment {
 
@@ -35,7 +41,26 @@ public class Dynamictable_assignment {
 			
 		}
 		
-
+		int trows = driver.findElements(By.xpath("//table[@class='table']//tbody//tr")).size();
+		System.out.println(trows);
+		List<Double> priceList = new ArrayList<Double>();
+		
+		for(int r =1 ; r<=trows;r++) {
+			String priceString = driver.findElement(By.xpath("//table[@class='table']//tbody//tr["+r+"]/td[6]")).getText();
+			String rawprice = priceString.replaceAll("[^0-9.]", "");
+			Double Price = Double.parseDouble(rawprice);
+			System.out.println(Price);
+			priceList.add(Price);
+			
+		}
+		System.out.println(priceList);
+		Collections.sort(priceList);
+		System.out.println(priceList);
+		
+		List<WebElement> AllPrices = driver.findElements(By.xpath("//table[@class='table']//tbody//tr/td[6]"));
+		System.out.println(AllPrices);
+		
+		driver.quit();
 	}
 
 }
