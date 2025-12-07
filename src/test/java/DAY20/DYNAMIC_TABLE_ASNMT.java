@@ -35,6 +35,13 @@ public class DYNAMIC_TABLE_ASNMT {
 			}
 			System.out.println();
 		}
+		String ID = driver.findElement(By.xpath("//table[@id='productTable']/tbody/tr[5]/td[1]")).getText();
+		System.out.println(ID);
+		if(ID.equals("20")) {
+			System.out.println("TEST IS PASSED");
+		}else {
+			System.out.println("TEST IS FAILED");
+		}
 		driver.quit();
 
 	}
