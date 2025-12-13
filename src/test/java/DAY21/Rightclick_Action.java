@@ -21,6 +21,7 @@ public class Rightclick_Action {
 		act.contextClick(Righclick).perform();
 		driver.findElement(By.xpath("//span[text()= 'Quit']")).click();
 		driver.switchTo().alert().accept();
+		driver.quit();
 
 	}
 
