@@ -22,6 +22,7 @@ public class MouseHover {
 		
 		Actions act = new Actions(driver);
 		act.moveToElement(ProductLink).moveToElement(Securegateway).click().perform();
+		
 
 	}
 
