@@ -38,6 +38,8 @@ public class DD_Readingfile {
 		}
 		
 		System.out.println(sheet.getRow(2).getCell(4));
+		workbook.close();
+		File1.close();
 		
 		
 
