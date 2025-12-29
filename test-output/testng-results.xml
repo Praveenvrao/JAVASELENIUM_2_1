@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-29T15:40:10 IST" name="FirstSuite" finished-at="2025-12-29T15:40:18 IST" duration-ms="7738">
+    <groups>
+    </groups>
+    <test started-at="2025-12-29T15:40:10 IST" name="FirstTest" finished-at="2025-12-29T15:40:18 IST" duration-ms="7738">
+      <class name="DAY23.Testcase1">
+        <test-method signature="Open()[pri:0, instance:DAY23.Testcase1@47af7f3d]" started-at="2025-12-29T15:40:10 IST" name="Open" finished-at="2025-12-29T15:40:10 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open -->
+        <test-method signature="LoginApp()[pri:1, instance:DAY23.Testcase1@47af7f3d]" started-at="2025-12-29T15:40:10 IST" name="LoginApp" finished-at="2025-12-29T15:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApp -->
+        <test-method signature="LogoutApp()[pri:3, instance:DAY23.Testcase1@47af7f3d]" started-at="2025-12-29T15:40:10 IST" name="LogoutApp" finished-at="2025-12-29T15:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutApp -->
+      </class> <!-- DAY23.Testcase1 -->
+      <class name="DAY23.Testcase2">
+        <test-method signature="OpentheApp()[pri:0, instance:DAY23.Testcase2@6356695f]" started-at="2025-12-29T15:40:10 IST" name="OpentheApp" finished-at="2025-12-29T15:40:15 IST" duration-ms="5237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpentheApp -->
+        <test-method signature="Entercreds()[pri:1, instance:DAY23.Testcase2@6356695f]" started-at="2025-12-29T15:40:15 IST" name="Entercreds" finished-at="2025-12-29T15:40:16 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Entercreds -->
+        <test-method signature="LoginApp()[pri:2, instance:DAY23.Testcase2@6356695f]" started-at="2025-12-29T15:40:16 IST" name="LoginApp" finished-at="2025-12-29T15:40:16 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApp -->
+        <test-method signature="Homepage()[pri:3, instance:DAY23.Testcase2@6356695f]" started-at="2025-12-29T15:40:16 IST" name="Homepage" finished-at="2025-12-29T15:40:18 IST" duration-ms="1584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+      </class> <!-- DAY23.Testcase2 -->
+    </test> <!-- FirstTest -->
+  </suite> <!-- FirstSuite -->
+</testng-results>
