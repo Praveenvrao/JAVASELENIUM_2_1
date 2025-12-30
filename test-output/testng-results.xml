@@ -2,60 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-30T17:07:59 IST" name="FirstSuite" finished-at="2025-12-30T17:07:59 IST" duration-ms="37">
+  <suite started-at="2025-12-30T17:30:29 IST" name="Default suite" finished-at="2025-12-30T17:30:29 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2025-12-30T17:07:59 IST" name="FirstTest" finished-at="2025-12-30T17:07:59 IST" duration-ms="37">
-      <class name="DAY23.TestNGAnnotations">
-        <test-method is-config="true" signature="BS()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="BS" finished-at="2025-12-30T17:07:59 IST" duration-ms="6" status="PASS">
+    <test started-at="2025-12-30T17:30:29 IST" name="Default test" finished-at="2025-12-30T17:30:29 IST" duration-ms="68">
+      <class name="DAY23.HARDandSOFTAssertions">
+        <test-method signature="Test_HardandSoft()[pri:1, instance:DAY23.HARDandSOFTAssertions@5e0826e7]" started-at="2025-12-30T17:30:29 IST" name="Test_HardandSoft" finished-at="2025-12-30T17:30:29 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="BT" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Test_HardandSoft -->
+        <test-method signature="Softassertion()[pri:2, instance:DAY23.HARDandSOFTAssertions@5e0826e7]" started-at="2025-12-30T17:30:29 IST" name="Softassertion" finished-at="2025-12-30T17:30:29 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="BC" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="BM" finished-at="2025-12-30T17:07:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="TestMethod2()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="TestMethod2" finished-at="2025-12-30T17:07:59 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod2 -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="AM" finished-at="2025-12-30T17:07:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="BM" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="Testmethod1()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="Testmethod1" finished-at="2025-12-30T17:07:59 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testmethod1 -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="AC" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="AM" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="AT" finished-at="2025-12-30T17:07:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:DAY23.TestNGAnnotations@7f3b84b8]" started-at="2025-12-30T17:07:59 IST" name="AS" finished-at="2025-12-30T17:07:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AS -->
-      </class> <!-- DAY23.TestNGAnnotations -->
-    </test> <!-- FirstTest -->
-  </suite> <!-- FirstSuite -->
+        </test-method> <!-- Softassertion -->
+      </class> <!-- DAY23.HARDandSOFTAssertions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
