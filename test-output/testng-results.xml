@@ -1,40 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T06:19:12 IST" name="Default suite" finished-at="2025-12-31T06:19:12 IST" duration-ms="53">
+  <suite started-at="2025-12-31T06:45:31 IST" name="Suite" finished-at="2025-12-31T06:45:31 IST" duration-ms="105">
     <groups>
       <group name="APP">
-        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" name="LoginApp" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@5e0826e7]" name="LogoutAdmin" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchACdetails" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchAc" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters.Login()[pri:1, instance:DAY24.TestNGParameters@323b36e0]" name="Login" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters.Logout()[pri:4, instance:DAY24.TestNGParameters@323b36e0]" name="Logout" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@4466af20]" name="LoginApp" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@4466af20]" name="LogoutAdmin" class="DAY24.TestNGParameters2"/>
       </group> <!-- APP -->
-      <group name="ADMIN">
-        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" name="LoginApp" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchACdetails" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchAc" class="DAY24.TestNGParameters2"/>
-      </group> <!-- ADMIN -->
+      <group name="PAYMENTS">
+        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
+      </group> <!-- PAYMENTS -->
+      <group name="PAY">
+        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
+        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
+      </group> <!-- PAY -->
     </groups>
-    <test started-at="2025-12-31T06:19:12 IST" name="Default test" finished-at="2025-12-31T06:19:12 IST" duration-ms="53">
+    <test started-at="2025-12-31T06:45:31 IST" name="Testgroup" finished-at="2025-12-31T06:45:31 IST" duration-ms="105">
+      <class name="DAY24.TestNGParameters">
+        <test-method signature="Login()[pri:1, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Login" finished-at="2025-12-31T06:45:31 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="SearchPayment" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchPayment -->
+        <test-method signature="Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Paymentstatus" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Paymentstatus -->
+        <test-method signature="Logout()[pri:4, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Logout" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- DAY24.TestNGParameters -->
       <class name="DAY24.TestNGParameters2">
-        <test-method signature="LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="LoginApp" finished-at="2025-12-31T06:19:12 IST" duration-ms="10" status="PASS">
+        <test-method signature="LoginApp()[pri:1, instance:DAY24.TestNGParameters2@4466af20]" started-at="2025-12-31T06:45:31 IST" name="LoginApp" finished-at="2025-12-31T06:45:31 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginApp -->
-        <test-method signature="SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="SearchAc" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchAc -->
-        <test-method signature="SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="SearchACdetails" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchACdetails -->
-        <test-method signature="LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="LogoutAdmin" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
+        <test-method signature="LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@4466af20]" started-at="2025-12-31T06:45:31 IST" name="LogoutAdmin" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutAdmin -->
       </class> <!-- DAY24.TestNGParameters2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Testgroup -->
+  </suite> <!-- Suite -->
 </testng-results>
