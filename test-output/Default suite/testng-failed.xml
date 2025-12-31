@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DAY23.HARDandSOFTAssertions">
+      <class name="DAY24.TestNGParameters2">
         <methods>
-          <include name="Test_HardandSoft"/>
+          <include name="LogoutAdmin"/>
+          <include name="SearchACdetails"/>
+          <include name="SearchAc"/>
+          <include name="LoginApp"/>
         </methods>
-      </class> <!-- DAY23.HARDandSOFTAssertions -->
+      </class> <!-- DAY24.TestNGParameters2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

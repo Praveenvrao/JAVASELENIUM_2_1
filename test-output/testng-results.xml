@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-30T17:30:29 IST" name="Default suite" finished-at="2025-12-30T17:30:29 IST" duration-ms="68">
+  <suite started-at="2025-12-31T06:19:12 IST" name="Default suite" finished-at="2025-12-31T06:19:12 IST" duration-ms="53">
     <groups>
+      <group name="APP">
+        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" name="LoginApp" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@5e0826e7]" name="LogoutAdmin" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchACdetails" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchAc" class="DAY24.TestNGParameters2"/>
+      </group> <!-- APP -->
+      <group name="ADMIN">
+        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" name="LoginApp" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchACdetails" class="DAY24.TestNGParameters2"/>
+        <method signature="TestNGParameters2.SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" name="SearchAc" class="DAY24.TestNGParameters2"/>
+      </group> <!-- ADMIN -->
     </groups>
-    <test started-at="2025-12-30T17:30:29 IST" name="Default test" finished-at="2025-12-30T17:30:29 IST" duration-ms="68">
-      <class name="DAY23.HARDandSOFTAssertions">
-        <test-method signature="Test_HardandSoft()[pri:1, instance:DAY23.HARDandSOFTAssertions@5e0826e7]" started-at="2025-12-30T17:30:29 IST" name="Test_HardandSoft" finished-at="2025-12-30T17:30:29 IST" duration-ms="17" status="PASS">
+    <test started-at="2025-12-31T06:19:12 IST" name="Default test" finished-at="2025-12-31T06:19:12 IST" duration-ms="53">
+      <class name="DAY24.TestNGParameters2">
+        <test-method signature="LoginApp()[pri:1, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="LoginApp" finished-at="2025-12-31T06:19:12 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_HardandSoft -->
-        <test-method signature="Softassertion()[pri:2, instance:DAY23.HARDandSOFTAssertions@5e0826e7]" started-at="2025-12-30T17:30:29 IST" name="Softassertion" finished-at="2025-12-30T17:30:29 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- LoginApp -->
+        <test-method signature="SearchAc()[pri:2, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="SearchAc" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Softassertion -->
-      </class> <!-- DAY23.HARDandSOFTAssertions -->
+        </test-method> <!-- SearchAc -->
+        <test-method signature="SearchACdetails()[pri:3, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="SearchACdetails" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchACdetails -->
+        <test-method signature="LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@5e0826e7]" started-at="2025-12-31T06:19:12 IST" name="LogoutAdmin" finished-at="2025-12-31T06:19:12 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutAdmin -->
+      </class> <!-- DAY24.TestNGParameters2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
