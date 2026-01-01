@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T06:45:31 IST" name="Suite" finished-at="2025-12-31T06:45:31 IST" duration-ms="105">
+  <suite started-at="2026-01-01T12:19:05 IST" name="Default suite" finished-at="2026-01-01T12:19:19 IST" duration-ms="13504">
     <groups>
-      <group name="APP">
-        <method signature="TestNGParameters.Login()[pri:1, instance:DAY24.TestNGParameters@323b36e0]" name="Login" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters.Logout()[pri:4, instance:DAY24.TestNGParameters@323b36e0]" name="Logout" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters2.LoginApp()[pri:1, instance:DAY24.TestNGParameters2@4466af20]" name="LoginApp" class="DAY24.TestNGParameters2"/>
-        <method signature="TestNGParameters2.LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@4466af20]" name="LogoutAdmin" class="DAY24.TestNGParameters2"/>
-      </group> <!-- APP -->
-      <group name="PAYMENTS">
-        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
-      </group> <!-- PAYMENTS -->
-      <group name="PAY">
-        <method signature="TestNGParameters.Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" name="Paymentstatus" class="DAY24.TestNGParameters"/>
-        <method signature="TestNGParameters.SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" name="SearchPayment" class="DAY24.TestNGParameters"/>
-      </group> <!-- PAY -->
     </groups>
-    <test started-at="2025-12-31T06:45:31 IST" name="Testgroup" finished-at="2025-12-31T06:45:31 IST" duration-ms="105">
-      <class name="DAY24.TestNGParameters">
-        <test-method signature="Login()[pri:1, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Login" finished-at="2025-12-31T06:45:31 IST" duration-ms="34" status="PASS">
+    <test started-at="2026-01-01T12:19:05 IST" name="Default test" finished-at="2026-01-01T12:19:19 IST" duration-ms="13504">
+      <class name="DAY24.DataProviderMethoddemo">
+        <test-method is-config="true" signature="testsetup()[pri:0, instance:DAY24.DataProviderMethoddemo@223d2c72]" started-at="2026-01-01T12:19:05 IST" name="testsetup" finished-at="2026-01-01T12:19:07 IST" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="SearchPayment()[pri:2, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="SearchPayment" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="3" status="PASS">
+        </test-method> <!-- testsetup -->
+        <test-method signature="Testlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DAY24.DataProviderMethoddemo@223d2c72]" started-at="2026-01-01T12:19:07 IST" name="Testlogin" data-provider="DP1" finished-at="2026-01-01T12:19:14 IST" duration-ms="7382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchPayment -->
-        <test-method signature="Paymentstatus()[pri:3, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Paymentstatus" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="2" status="PASS">
+        </test-method> <!-- Testlogin -->
+        <test-method signature="Testlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DAY24.DataProviderMethoddemo@223d2c72]" started-at="2026-01-01T12:19:14 IST" name="Testlogin" data-provider="DP1" finished-at="2026-01-01T12:19:19 IST" duration-ms="4617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Paymentstatus -->
-        <test-method signature="Logout()[pri:4, instance:DAY24.TestNGParameters@323b36e0]" started-at="2025-12-31T06:45:31 IST" name="Logout" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters.Login" duration-ms="1" status="PASS">
+        </test-method> <!-- Testlogin -->
+        <test-method is-config="true" signature="TestClose()[pri:0, instance:DAY24.DataProviderMethoddemo@223d2c72]" started-at="2026-01-01T12:19:19 IST" name="TestClose" finished-at="2026-01-01T12:19:19 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- DAY24.TestNGParameters -->
-      <class name="DAY24.TestNGParameters2">
-        <test-method signature="LoginApp()[pri:1, instance:DAY24.TestNGParameters2@4466af20]" started-at="2025-12-31T06:45:31 IST" name="LoginApp" finished-at="2025-12-31T06:45:31 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginApp -->
-        <test-method signature="LogoutAdmin()[pri:4, instance:DAY24.TestNGParameters2@4466af20]" started-at="2025-12-31T06:45:31 IST" name="LogoutAdmin" finished-at="2025-12-31T06:45:31 IST" depends-on-methods="DAY24.TestNGParameters2.LoginApp" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogoutAdmin -->
-      </class> <!-- DAY24.TestNGParameters2 -->
-    </test> <!-- Testgroup -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- TestClose -->
+      </class> <!-- DAY24.DataProviderMethoddemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

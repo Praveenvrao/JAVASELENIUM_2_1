@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DAY24.TestNGParameters2">
+      <class name="DAY24.DataProviderMethoddemo">
         <methods>
-          <include name="LogoutAdmin"/>
-          <include name="SearchACdetails"/>
-          <include name="SearchAc"/>
-          <include name="LoginApp"/>
+          <include name="TestClose"/>
+          <include name="testsetup"/>
+          <include name="Testlogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- DAY24.TestNGParameters2 -->
+      </class> <!-- DAY24.DataProviderMethoddemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
